@@ -17,20 +17,5 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(getBaseContext(),"Hello........",Toast.LENGTH_LONG).show();
     }
 
-    private void generateNotification(){
-        NotificationCompat.Builder builder = new NotificationCompat.Builder(this,"channelID")
-                .setSmallIcon(R.drawable.ic_launcher_background)
-                .setContentTitle("alarma")
-                .setContentText("la alarma esta sonando..");
 
-        NotificationManager notificationManager=(NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
-        notificationManager.notify(NOTIFICACION_ID,builder.build());
-    }
-
-    private void updateNotification(){
-        NotificationCompat.Builder builder = new NotificationCompat.Builder(this,"channelID")
-                .setSmallIcon(R.drawable.ic_launcher_background)
-                .setContentTitle("alarma")
-                .setContentText("la alarma esta sonando..");
-    }
 }
